@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration
 
 @Configuration
 @ConfigurationProperties(prefix = "api.auth")
-data class AuthENdpointsProperties(
+data class AuthEndpointsProperties(
     var login: String = "",
     var loginFacebook: String = "",
     var loginGoogle: String = "",

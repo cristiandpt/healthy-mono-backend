@@ -1,0 +1,93 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Kotlin ###
+.kotlin
+
+
+.gradle/                 # Gradle's cache and working directories
+**/build/                # All 'build' output directories for modules and the root
+!**/build/generated/sources/annotationProcessor/kotlin/main/ # Keep generated sources if you have annotation processors (like Lombok, MapStruct) and need them for IDE. Adjust path if different.
+!**/build/generated/ksp/kotlin/main/                        # Keep generated KSP sources if you use Kotlin Symbol Processing
+
+
+# ---------------------------------------------------------------
+# JVM / Language Specific
+# ---------------------------------------------------------------
+*.class                  # Compiled Java/Kotlin class files
+*.jar                    # JAR files
+*.war                    # WAR files (for web applications)
+*.ear                    # EAR files
+*.zip                    # Archive files (often created by build tasks, like app.zip in your structure)
+
+# Log files
+*.log
+logs/                    # A common directory for logs
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+
+# Maven (if using any Maven specific plugins or local Maven repo copies)
+target/
+
+# ---------------------------------------------------------------
+# Spring Boot Specific
+# ---------------------------------------------------------------
+# Executable JARs often contain BOOT-INF directory
+BOOT-INF/
+# Spring Boot devtools remote access
+.spring_boot_devtools.properties
+
+
+# ---------------------------------------------------------------
+# Sensitive Information (General)
+# ---------------------------------------------------------------
+# Properties files or other configuration that might contain sensitive data
+# Only ignore if these are NOT committed and are managed separately (e.g., via environment variables)
+# application*.properties
+# application*.yml
+# *.env
+# .env
+# Remember to keep a template file if ignoring, e.g., application.properties.template
+
+# Keystore files
+*.jks
+*.p12

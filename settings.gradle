@@ -1,0 +1,4 @@
+rootProject.name = 'health-mono-backend' // Give your overall project a meaningful name
+
+include 'app'
+include 'infrastructure:api'
