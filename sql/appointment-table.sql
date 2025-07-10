@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXIST appointments (
+    id                       UUID                        NOT NULL PRIMARY KEY,
+    employee_id              UUID                        NOT NULL,
+    patient_id               UUID                        NOT NULL,
+    created_date             TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+    date                     TIMESTAMP WITH TIME ZONE    NOT NULL,
+    end_date                 TIMESTAMP WITH TIME ZONE    NOT NULL,
+    arrival_time             TIMESTAMP WITHOUT TIME ZONE NULL,
+    service_time             TIMESTAMP WITHOUT TIME ZONE NULL,
+    comments                 TEXT                        NULL,
+    is_active                BOOLEAN                     NOT NULL,
+    consulting_room_id       UUID                        NULL,
+    treatment_procedure_id   UUID                        NULL,
+    cancellation_reason_id   UUID                        NULL,
+    cancelled_date           TIMESTAMP WITHOUT TIME ZONE NULL,
+    cancelled_comments       TEXT                        NULL,
+    is_private_practice      BOOLEAN                     NOT NULL,
+    procedure_id             UUID                        NULL,
+    status                   SMALLINT                    NOT NULL
+);
