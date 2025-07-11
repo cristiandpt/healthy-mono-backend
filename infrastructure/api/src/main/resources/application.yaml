@@ -4,8 +4,9 @@ spring:
 
 api:
   auth:
-    login: /api/authentication/account/login
-    login-facebook: /api/authentication/account/login/facebook
-    login-google: /api/authentication/account/login/google
-    social-register: /api/authentication/account/social-register
-    register: /api/authentication/account/register
+    base-path: /api/authentication/account
+    login: /login
+    login-facebook: /login/facebook
+    login-google: /login/google
+    social-register: /social-register
+    register: /register
