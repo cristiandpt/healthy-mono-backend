@@ -10,3 +10,6 @@ api:
     login-google: /login/google
     social-register: /social-register
     register: /register
+  specialty:
+    specialties: /specialties
+    specialty-by-id: /{id}
