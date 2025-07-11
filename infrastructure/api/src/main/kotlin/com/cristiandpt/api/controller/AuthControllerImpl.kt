@@ -1,15 +1,15 @@
 // AuthControllerImpl.kt
 package com.cristiandpt.api.controller
 
-import com.cristiandpt.api.endpoint.AuthController
-import com.cristiandpt.healthy.core.service.AuthService
+import com.cristiandpt.api.endpoint.AuthEndpoints
+import com.cristiandpt.core.service.AuthService
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class AuthControllerImpl(private val authService: AuthService) : AuthController {
+class AuthControllerImpl(private val authService: AuthService) : AuthEndpoints {
 
-    override fun login(loginRequest: LoginRequest): String {
-        return authService.login(loginRequest.username, loginRequest.password)
+    override fun login(loginRequest: String): String {
+        return authService.login("loginRequest.username", "loginRequest.password")
     }
 
     override fun loginFacebook(): String {
@@ -20,15 +20,15 @@ class AuthControllerImpl(private val authService: AuthService) : AuthController 
         return authService.loginGoogle()
     }
 
-    override fun socialRegister(registerRequest: RegisterRequest): String {
-        return authService.socialRegister(registerRequest.username, registerRequest.email)
+    override fun socialRegister(registerRequest: String): String {
+        return authService.socialRegister("registerRequest.username", "registerRequest.email")
     }
 
-    override fun register(registerRequest: RegisterRequest): String {
+    override fun register(registerRequest: String): String {
         return authService.register(
-                registerRequest.username,
-                registerRequest.password,
-                registerRequest.email
+                "registerRequest.username",
+                "registerRequest.password",
+                "registerRequest.email"
         )
     }
 }

@@ -20,7 +20,7 @@ repositories {
 
 dependencies {
 
-
+    implementation project(':core')
     // Import the Spring Boot BOM to manage versions
     // This provides dependency management without applying the full Spring Boot plugin
     // Use the same Spring Boot version as your main application
