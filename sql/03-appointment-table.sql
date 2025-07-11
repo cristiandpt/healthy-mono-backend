@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXIST appointments (
+CREATE TABLE IF NOT EXISTS appointments (
     id                       UUID                        NOT NULL PRIMARY KEY,
     employee_id              UUID                        NOT NULL,
     patient_id               UUID                        NOT NULL,
