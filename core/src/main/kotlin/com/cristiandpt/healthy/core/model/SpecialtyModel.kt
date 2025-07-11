@@ -1,6 +1,6 @@
 package com.cristiandpt.healthy.core.core.model
 
-data class Specialty(
+data class SpecialtyModel(
         val id: Long,
         val name: String,
         val description: String,

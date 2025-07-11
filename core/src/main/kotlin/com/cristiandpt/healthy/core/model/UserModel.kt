@@ -1,14 +1,15 @@
 package com.cristiandpt.healthy.core.core.model
 
+import java.time.LocalDateTime
 import java.util.UUID
 
-data class UserEntity(
+data class UserModel(
         val id: UUID,
         val accessFailedCount: Int,
         val email: String?,
         val emailConfirmed: Boolean,
         val lockoutEnabled: Boolean,
-        val lockoutEnd: java.util.Date?,
+        val lockoutEnd: LocalDateTime?,
         val normalizedEmail: String?,
         val normalizedUserName: String?,
         val phoneNumber: String?,
