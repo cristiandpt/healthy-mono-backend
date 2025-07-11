@@ -1,7 +1,8 @@
 
+
 plugins {
     // Apply the Kotlin JVM plugin to enable Kotlin compilation
-    kotlin("jvm") version "1.9.23" // Use your preferred Kotlin version
+    kotlin("jvm") version "1.9.25" // Use your preferred Kotlin version
     `java-library`  // Jar library
 }
 
