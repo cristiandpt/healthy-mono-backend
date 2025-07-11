@@ -91,3 +91,4 @@ BOOT-INF/
 # Keystore files
 *.jks
 *.p12
+config/build
