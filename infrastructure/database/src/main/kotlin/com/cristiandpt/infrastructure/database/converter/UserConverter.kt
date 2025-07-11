@@ -1,6 +1,6 @@
 package com.cristiandpt.infrastructure.database.converter
 
-import com.cristiandpt.healthy.core.core.model.UserModel
+import com.cristiandpt.healthy.core.model.UserModel
 import com.cristiandpt.infrastructure.database.entity.UserEntity
 import java.util.*
 import org.springframework.core.convert.converter.Converter

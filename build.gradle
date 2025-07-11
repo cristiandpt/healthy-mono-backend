@@ -6,7 +6,7 @@ plugins {
 	id 'org.jetbrains.kotlin.plugin.jpa' version '1.9.25'
 }
 
-group = 'com.cristiandpt'
+group = 'com.cristiandpt.healthy'
 version = '0.0.1'
 
 java {
@@ -39,7 +39,7 @@ springBoot {
     // Specify the fully qualified name of your main Spring Boot application class.
     // This class should be located in your 'app' module.
     // Example: "com.cristiandpt.app.YourMainApplicationClass"
-    mainClass = 'com.cristiandpt.app.AppApplicationKt'// <-- REPLACE WITH YOUR ACTUAL MAIN CLASS FQCN
+    mainClass = 'com.cristiandpt.healthy.app.AppApplicationKt'// <-- REPLACE WITH YOUR ACTUAL MAIN CLASS FQCN
 }
 
 kotlin {

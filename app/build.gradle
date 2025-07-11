@@ -9,6 +9,8 @@ repositories {
 }
 
 dependencies {
+
+    implementation project(':core')
     implementation project(':infrastructure:api')
     implementation platform('org.springframework.boot:spring-boot-dependencies:3.5.3') // <--- MATCH ROOT'S SPRING BOOT VERSION
     //implementation(project(":infrastructure:database"))

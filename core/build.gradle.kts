@@ -1,12 +1,13 @@
 
 
+
 plugins {
     // Apply the Kotlin JVM plugin to enable Kotlin compilation
     kotlin("jvm") version "1.9.25" // Use your preferred Kotlin version
     `java-library`  // Jar library
 }
 
-group = "com.cristiandpt.core"
+group = "com.cristiandpt.healthy"
 version = "0.0.1-SNAPSHOT"
 
 java {

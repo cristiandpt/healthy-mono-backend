@@ -1,4 +1,4 @@
-package com.cristiandpt.healthy.core.core.model
+package com.cristiandpt.healthy.core.model
 
 data class SpecialtyModel(
         val id: Long,

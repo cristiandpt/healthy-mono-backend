@@ -2,7 +2,7 @@
 package com.cristiandpt.api.controller
 
 import com.cristiandpt.api.endpoint.AuthEndpoints
-import com.cristiandpt.core.service.AuthService
+import com.cristiandpt.healthy.core.service.AuthService
 import org.springframework.web.bind.annotation.RestController
 
 @RestController

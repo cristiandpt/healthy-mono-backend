@@ -1,6 +1,6 @@
 package com.cristiandpt.infrastructure.database.converter
 
-import com.cristiandpt.healthy.core.core.model.SpecialtyModel
+import com.cristiandpt.healthy.core.model.SpecialtyModel
 import com.cristiandpt.infrastructure.database.entity.SpecialtyEntity
 import org.springframework.core.convert.converter.Converter
 import org.springframework.stereotype.Component

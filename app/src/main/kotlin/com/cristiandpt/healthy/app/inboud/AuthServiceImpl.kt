@@ -1,5 +1,6 @@
-package com.cristiandpt.healthy.core.service
+package com.cristiandpt.healthy.app
 
+import com.cristiandpt.healthy.core.service.AuthService
 import org.springframework.stereotype.Service
 
 @Service
