@@ -25,11 +25,11 @@ dependencies {
     // Spring Boot Starter for Validation
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     // PostgreSQL JDBC Driver
-    implementation 'org.postgresql:postgresql'
+    runtimeOnly 'org.postgresql:postgresql'
     // Import the Spring Boot BOM to manage versions
     // This provides dependency management without applying the full Spring Boot plugin
     // Use the same Spring Boot version as your main application
-    implementation platform('org.springframework.boot:spring-boot-dependencies:3.2.5') // <--- Add this line (replace 3.2.5 with your actual Spring Boot version, e.g., 3.5.3)
+    implementation platform('org.springframework.boot:spring-boot-dependencies:3.5.3') // <--- Add this line (replace 3.2.5 with your actual Spring Boot version, e.g., 3.5.3)
 	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
 	implementation 'org.jetbrains.kotlin:kotlin-reflect'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -41,6 +41,12 @@ kotlin {
 	compilerOptions {
 		freeCompilerArgs.addAll '-Xjsr305=strict'
 	}
+}
+
+allOpen { // Ensure this is also present if you have entities in this module
+    annotation 'jakarta.persistence.Entity'
+    annotation 'jakarta.persistence.MappedSuperclass'
+    annotation 'jakarta.persistence.Embeddable'
 }
 
 tasks.named('test') {

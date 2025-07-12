@@ -1,4 +1,4 @@
-package com.cristiandpt.api.endpoint
+package com.cristiandpt.healthy.api.endpoint
 
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

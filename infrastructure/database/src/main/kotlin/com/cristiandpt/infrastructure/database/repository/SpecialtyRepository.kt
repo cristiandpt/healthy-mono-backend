@@ -1,6 +1,6 @@
-package com.cristiandpt.database.repository
+package com.cristiandpt.healthy.database.repository
 
-import com.cristiandpt.database.entity.SpecialtyEntity
+import com.cristiandpt.healthy.database.entity.SpecialtyEntity
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 

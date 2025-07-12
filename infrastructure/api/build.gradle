@@ -5,7 +5,7 @@ plugins {
 }
 
 
-group = 'com.cristiandpt.infrastructure.api'
+group = 'com.cristiandpt.healthy.api'
 version = '0.0.1'
 
 java {

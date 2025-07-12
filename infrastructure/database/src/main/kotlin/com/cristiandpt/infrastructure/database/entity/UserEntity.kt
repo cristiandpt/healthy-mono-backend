@@ -1,4 +1,4 @@
-package com.cristiandpt.infrastructure.database.entity
+package com.cristiandpt.healthy.database.entity
 
 import jakarta.persistence.*
 import jakarta.validation.constraints.*

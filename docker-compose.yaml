@@ -9,7 +9,7 @@ services:
     env_file:
       - .env-postgres
     environment:
-      POSTGRES_DB: healthy-company
+      POSTGRES_DB: healthy-db
       POSTGRES_PASSWORD: 123facil
       POSTGRES_USER: cristiandpt
     ports:

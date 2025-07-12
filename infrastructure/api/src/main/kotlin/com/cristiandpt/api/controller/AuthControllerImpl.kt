@@ -1,4 +1,4 @@
-// AuthControllerImpl.kt
+/*// AuthControllerImpl.kt
 package com.cristiandpt.api.controller
 
 import com.cristiandpt.api.endpoint.AuthEndpoints
@@ -32,3 +32,4 @@ class AuthControllerImpl(private val authService: AuthService) : AuthEndpoints {
         )
     }
 }
+*/

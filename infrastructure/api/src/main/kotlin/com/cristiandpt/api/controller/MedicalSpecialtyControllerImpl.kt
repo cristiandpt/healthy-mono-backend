@@ -1,13 +1,16 @@
-package com.cristiandpt.healthy.app.controller
+package com.cristiandpt.healthy.api.controller
 
-import com.cristiandpt.api.endpoint.MedicalSpecialtyEndpoint
+import com.cristiandpt.healthy.api.endpoint.MedicalSpecialtyEndpoint
+import com.cristiandpt.healthy.core.model.SpecialtyModel
+import com.cristiandpt.healthy.core.service.SpecialtyService
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class MedicalSpecialtyControllerImpl : MedicalSpecialtyEndpoint {
+class MedicalSpecialtyControllerImpl constructor(private val service: SpecialtyService) :
+        MedicalSpecialtyEndpoint {
 
-    override fun specialties(): Array<String> = arrayOf("uno", "dos", "three")
+    override fun specialties(): List<SpecialtyModel> = service.getSpecialties()
 
     override fun specialtyById(@PathVariable id: String): String = id
 }
