@@ -45,6 +45,3 @@ data class SpecialtyEntity(
         @Positive(message = "Video call minutes must be a positive value")
         var videoCallMinutes: Int = 0 // <--- CHANGE to 'var' and provide a default value
 ) {
-    // You might also add a secondary constructor if needed for specific use cases
-    // but often not required if all fields have defaults.
-}
