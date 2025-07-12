@@ -1,6 +1,6 @@
 package com.cristiandpt.healthy.core.model
 
-data class BloodPressureMetricOutputModel(
+data class BloodPressureMetricModel(
         val id: String,
         val date: String,
         val kioskDeviceId: Int,
