@@ -7,7 +7,7 @@ data class DoctorProfileModel(
         val title: String,
         val rate: Float,
         val opinionsQuantity: Int?,
-        val biography: String? = EMPTY,
+        val biography: String? = "",
         val spokenLanguages: String,
         val consultationRate: Double,
         val videoCallRate: Double,
